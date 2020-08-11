@@ -1,0 +1,115 @@
+body {
+    background-color: #f1f1f1;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+label {
+  margin-top: .5rem;
+}
+
+  /* Style the header */
+  .header {
+
+    padding: 20px;
+    border: black 2px;
+    text-align: center;
+  }
+
+  .add {
+    margin: 20px 20px 20px 0px;
+    width:150px;
+    background-color: #ebe9e6;
+    color: black;
+    border-color: #bdbdbd;
+  }
+
+  .search-panel {
+    width: 100%;
+  }
+
+.button1 {
+  background-color: #f1f1f1;
+  color: black;
+  border: 2px solid #4CAF50;
+  border-radius: 5%;
+  height: 35px;
+  width: 60px;
+  margin: 0px;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button3 {
+background-color: #f1f1f1;
+color: black;
+border: 2px solid #f44336;
+border-radius: 5%;
+height: 35px;
+width: 100px;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif !important;
+}
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+  #customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+  #search-table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#search-table td, #search-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#search-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#search-table tr:hover {background-color: #ddd;}
+
+#search-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+  .footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6b768edb9b.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css" />
+
+    <title>Employer CRUD application</title>
+  </head>
+  <body>
+      <div class="header">
+        <h1>Employee Manager</h1>
+      </div>
+      <div class="container">
+        <div class"top-feature">
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary add" data-toggle="modal" data-target="#addModal">
+  Add Employee
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Add Employee</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <label for="emp-id">Employee ID:</label><br>
+          <input type="text" id="modal-emp-id" name="emp-id" placeholder="12345"><br>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="modal-fname" name="fname" placeholder="First"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="modal-lname" name="lname" placeholder="Last"><br>
+          <label for="salary">Salary:</label><br>
+          <input type="text" id="modal-salary" name="salary" placeholder="$50,000"><br>
+          <label for="man-id">Manager ID:</label><br>
+          <input type="text" id="modal-man-id" name="man-id" placeholder="12345"><br>
+          <label for=ppl-man>Employees managed:</label><br>
+          <input type="text" id="modal-ppl-man" name="ppl-man" placeholder="00000"><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" onclick="modalSubmit()" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div><br>
+          <input type="search" id="mySearch" placeholder="Search employee"><button onclick="itemSearch()">Search</button>
+        </div>
+        <div class="table">
+
+<table id="customers">
+  <tr>
+    <th>Employee ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Salary</th>
+    <th>Managers ID</th>
+    <th>People Managed</th>
+    <th>Edit/Delete</th>
+  </tr>
+
+</table>
+
+<table id="search-table">
+  <tr>
+    <th>Employee ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Salary</th>
+    <th>Managers ID</th>
+    <th>People Managed</th>
+    <th>Edit/Delete</th>
+  </tr>
+
+</table>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
